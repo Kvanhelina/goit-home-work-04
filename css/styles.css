@@ -142,13 +142,16 @@ img {
 
 .section-head {
   background: var(--navyblue, #2e2f42);
+  background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/head-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   text-align: center;
   padding: 188px 0;
 }
 
 .section-head-titel {
   color: #ffffff;
-  background: #2e2f42;
   font-size: 56px;
   font-weight: 700;
   line-height: 1.07;
@@ -236,6 +239,7 @@ img {
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
+
 .section-team-head {
   color: #2e2f42;
   text-align: center;
@@ -271,6 +275,19 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+
+.team-soc-link {
+
+}
+
+.team-soc-link::after {
+ content: '';
+ width: 40px;
+ height: 40px;
+ background-color: #4D5AE5;
+ border-radius: 50%;
+ flex-shrink: 0;
 }
 
 /* OUR PORTFOLIO */
