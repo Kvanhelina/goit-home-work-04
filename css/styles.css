@@ -114,15 +114,17 @@ img {
   transition-duration: 1000ms;
   transition-delay: 1000ms;
   transition-timing-function: ease;
+  position: relative;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-link::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: -1px;
   height: 4px;
-  background-color:  #404bbf;
+  color: #404bbf;
   border-radius: 2px;
 }
 
@@ -147,7 +149,6 @@ img {
   letter-spacing: 0.02em;
   display: block;
   padding: 24px 0;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-list-link:hover,
@@ -240,11 +241,11 @@ img {
 }
 
 .adv-cover-wraper {
+  background-color: #f4f4fd;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 112px;
-  background-color: #f4f4fd;
   border-radius: 4px;
   margin-bottom: 8px;
 }
@@ -309,27 +310,35 @@ img {
   letter-spacing: 0.02em;
 }
 
-.team-soc-link {
-  color: #4d5ae5;
+.team-soc-list {
   display: flex;
   justify-content: center;
-  align-items: center;
   gap: 24px;
 }
 
-.team-soc-link::after {
-  content: "";
+.team-soc-item {
   width: 40px;
   height: 40px;
   background-color: #4d5ae5;
-  border-radius: 50%;
-  flex-shrink: 0;
-  fill: #f4f4fd;
 }
 
-.team-soc-icon {
-  width: 16px;
-  height: 16px;
+.team-soc-link {
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-soc-link:hover,
+.team-soc-link:focus {
+  background-color: #404bbf;
+}
+
+.teams-soc-icon {
+  fill: #f4f4fd;
 }
 
 /* OUR PORTFOLIO */
@@ -347,8 +356,14 @@ img {
   row-gap: 48px;
 }
 
+.section-portfolio-list:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 .portfolio-list-item {
   width: calc((100% - 48px) / 3);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-cover-wraper {
@@ -399,7 +414,7 @@ img {
 }
 
 .portfolio-cover-block {
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   padding: 32px;
@@ -411,11 +426,18 @@ img {
 }
 
 .portfolio-cover-text {
+  position: absolute;
   color: #f4f4fd;
+  top: 0;
   font-size: 16px;
-  font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding: 40px 32px;
+  background-color: #4d5ae5;
+  height: 100%;
+  width: 100%;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* PACE FOOTER */
