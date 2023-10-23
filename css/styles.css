@@ -317,6 +317,7 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 .team-soc-list {
@@ -328,7 +329,6 @@ img {
 .team-soc-item {
   width: 40px;
   height: 40px;
-  background-color: #4d5ae5;
 }
 
 .team-soc-link {
@@ -494,12 +494,14 @@ img {
 .footer-soc-list {
   display: flex;
   gap: 16px;
+  justify-content: center
 }
 
 .footer-soc-item {
   width: 40px;
   top: 40px;
 }
+
 
 .footer-soc-link {
   width: 100%;
@@ -509,9 +511,14 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-soc-link:hover,
 .footer-soc-link:focus {
   background-color: #31d0aa;
+}
+
+.footer-soc-icon {
+  fill: #f4f4fd;
 }
