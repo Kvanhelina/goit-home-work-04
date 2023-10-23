@@ -441,11 +441,12 @@ img {
 .footer {
   background-color: #2e2f42;
   padding: 100px 0;
+  display: flex;
+  align-items: baseline;
 }
 
 .footer-container {
   margin-right: 120px;
-  margin-left: 156px;
 }
 
 .footer-studio {
@@ -502,7 +503,7 @@ img {
 
 .footer-soc-item {
   width: 40px;
-  top: 40px;
+  height: 40px;
 }
 
 .footer-soc-link {
