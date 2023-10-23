@@ -114,10 +114,6 @@ img {
   letter-spacing: 0.02em;
   display: block;
   padding: 24px 0;
-  transition-property: color;
-  transition-duration: 1000ms;
-  transition-delay: 1000ms;
-  transition-timing-function: ease;
   position: relative;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -257,6 +253,8 @@ img {
   height: 112px;
   border-radius: 4px;
   margin-bottom: 8px;
+  border: 1px solid #8e8f99;
+  background: #f4f4fd;
 }
 
 /* OUR TEAM */
@@ -367,7 +365,8 @@ img {
 }
 
 .section-portfolio-list:hover {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-list-item {
@@ -422,7 +421,6 @@ img {
   letter-spacing: 0.02em;
 }
 
-
 .portfolio-cover-text {
   position: absolute;
   color: #f4f4fd;
@@ -446,9 +444,8 @@ img {
 }
 
 .footer-container {
-  display: flex;
-  align-items: baseline;
   margin-right: 120px;
+  margin-left: 156px;
 }
 
 .footer-studio {
@@ -482,6 +479,11 @@ img {
   width: 264px;
 }
 
+.footer-soc-container {
+  margin-right: 540px;
+  margin-bottom: 136px;
+}
+
 .footer-soc-paragraph {
   color: #ffffff;
   font-size: 16px;
@@ -489,19 +491,19 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
 }
 
 .footer-soc-list {
   display: flex;
   gap: 16px;
-  justify-content: center
 }
 
 .footer-soc-item {
   width: 40px;
   top: 40px;
 }
-
 
 .footer-soc-link {
   width: 100%;
