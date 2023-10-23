@@ -126,6 +126,10 @@ img {
   height: 4px;
   background-color: #404bbf;
   border-radius: 2px;
+  width: 48px;
+  height: 4px;
+  border-radius: 2px;
+  background: #404BBF;
 }
 
 .menu-link:hover,
