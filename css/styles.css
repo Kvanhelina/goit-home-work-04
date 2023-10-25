@@ -445,10 +445,13 @@ img {
   align-items: baseline;
 }
 
-.footer-container {
-  margin-right: 120px;
+.footer-wraper {
   display: flex;
   align-items: baseline;
+}
+
+.footer-container {
+  margin-right: 120px;
 }
 
 .footer-studio {
